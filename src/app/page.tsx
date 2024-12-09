@@ -1,34 +1,13 @@
 "use client";
 
-import {
-  InstagramOutlined,
-  SpotifyOutlined,
-  SendOutlined,
-} from "@ant-design/icons";
-import React from "react";
-import {
-  Breadcrumb,
-  Layout,
-  Menu,
-  Button,
-  theme,
-  Typography,
-  Divider,
-  Space,
-  Flex,
-} from "antd";
-import { Header, Content, Footer } from "antd/es/layout/layout";
-import Image from "next/image";
+import { Button, theme } from "antd";
 import Title from "antd/es/typography/Title";
-import Paragraph from "antd/es/typography/Paragraph";
 
 const Landing = () => {
   const {
     token: {
       colorBgContainer,
       borderRadiusLG,
-      screenLGMax,
-      fontSizeLG,
       screenXXL,
     },
   } = theme.useToken();
@@ -81,8 +60,7 @@ const Landing = () => {
           margin: 30,
         }}
       >
-        Redefine expectations. Experience design that's truly something
-        different.
+        {`Redefine expectations. Experience design that's truly something different.`}
       </Title>
       <Button
         size="large"

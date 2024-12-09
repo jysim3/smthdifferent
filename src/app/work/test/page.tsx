@@ -1,24 +1,14 @@
 "use client";
 import { EyeOutlined } from "@ant-design/icons";
-import { Button, Card, Divider, Flex, Image, Space, theme } from "antd";
-import Meta from "antd/es/card/Meta";
-import InternalPreviewGroup from "antd/es/image/PreviewGroup";
+import { Button, Flex, Image, Space, theme } from "antd";
 import Paragraph from "antd/es/typography/Paragraph";
 import Title from "antd/es/typography/Title";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const X = () => {
   const {
-    token: {
-      colorBgContainer,
-      borderRadiusLG,
-      screenLGMax,
-      fontSizeLG,
-      screenXL,
-    },
+    token: { screenXL },
   } = theme.useToken();
-  const router = useRouter();
   const [visible, setVisible] = useState(false);
   return (
     <Flex vertical>
@@ -34,7 +24,7 @@ const X = () => {
           .fill(null)
           .map(
             (_, index) =>
-              `https://smthdifferent.com/wp-content/uploads/2024/01/2319_7ACA_Chan-${index+2}.jpg`,
+              `https://smthdifferent.com/wp-content/uploads/2024/01/2319_7ACA_Chan-${index + 2}.jpg`,
           )}
       ></Image.PreviewGroup>
       <Flex

@@ -1,18 +1,12 @@
 "use client";
-import { Card, Divider, Flex, Space, theme } from "antd";
+import { Card, Flex, Space, theme } from "antd";
 import Meta from "antd/es/card/Meta";
-import Paragraph from "antd/es/typography/Paragraph";
 import Title from "antd/es/typography/Title";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const X = () => {
   const {
     token: {
-      colorBgContainer,
-      borderRadiusLG,
-      screenLGMax,
-      fontSizeLG,
       screenXL,
     },
   } = theme.useToken();
@@ -29,7 +23,7 @@ const X = () => {
         gap={10}
       >
         <Title>Our works</Title>
-        <Space >
+        <Space>
           <Card
             hoverable
             cover={

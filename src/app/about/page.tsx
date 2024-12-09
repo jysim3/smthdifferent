@@ -1,19 +1,12 @@
 "use client";
-import { Card, Divider, Flex, Space, theme } from "antd";
+import { Card, Divider, Flex, theme } from "antd";
 import Meta from "antd/es/card/Meta";
 import Paragraph from "antd/es/typography/Paragraph";
 import Title from "antd/es/typography/Title";
-import Image from "next/image";
 
 const X = () => {
   const {
-    token: {
-      colorBgContainer,
-      borderRadiusLG,
-      screenLGMax,
-      fontSizeLG,
-      screenXL,
-    },
+    token: { screenXL },
   } = theme.useToken();
   return (
     <Flex vertical>
@@ -36,12 +29,7 @@ const X = () => {
         />
         <Title>Something Different: Where Design Takes Shape</Title>
         <Paragraph>
-          We're more than just a design firm – we're storytellers, architects of
-          experiences, and passionate collaborators. At Something Different, we
-          believe good design transcends aesthetics; it evokes emotion, sparks
-          conversation, and pushes boundaries. We're driven by the belief that
-          every project, big or small, deserves a unique touch, a dash of the
-          unexpected.
+          {`We're more than just a design firm – we're storytellers, architects of experiences, and passionate collaborators. At Something Different, we believe good design transcends aesthetics; it evokes emotion, sparks conversation, and pushes boundaries. We're driven by the belief that every project, big or small, deserves a unique touch, a dash of the unexpected.`}
         </Paragraph>
       </Flex>
       <img
@@ -76,21 +64,23 @@ const X = () => {
               fontSize: 20,
             }}
           >
-            We're committed to crafting design experiences that are both bold
-            and purposeful. We believe in:
-            <ul style={{paddingTop: 50}}>
+            We{`'`}re committed to crafting design experiences that are both
+            bold and purposeful. We believe in:
+            <ul style={{ paddingTop: 50 }}>
               <li>
-                <strong>Collaboration</strong>: Your vision is our compass. We work closely with
-                clients, listening attentively to their needs and aspirations.
+                <strong>Collaboration</strong>: Your vision is our compass. We
+                work closely with clients, listening attentively to their needs
+                and aspirations.
               </li>
               <li>
-                <strong>Innovation</strong>: We embrace new technologies and trends, always
-                seeking fresh perspectives and pushing creative boundaries.
+                <strong>Innovation</strong>: We embrace new technologies and
+                trends, always seeking fresh perspectives and pushing creative
+                boundaries.
               </li>
               <li>
-                <strong>Storytelling</strong>: Every design tells a story. We strive to weave
-                narratives that resonate with your audience, leaving a lasting
-                impression.
+                <strong>Storytelling</strong>: Every design tells a story. We
+                strive to weave narratives that resonate with your audience,
+                leaving a lasting impression.
               </li>
             </ul>
           </Paragraph>

@@ -1,29 +1,11 @@
-import {
-  InstagramOutlined,
-  SpotifyOutlined,
-  SendOutlined,
-} from "@ant-design/icons";
-import React from "react";
-import {
-  Breadcrumb,
-  Layout,
-  Menu,
-  Button,
-  theme,
-  Typography,
-  Divider,
-  Space,
-  Flex,
-} from "antd";
-import { Header, Content, Footer } from "antd/es/layout/layout";
-import Paragraph from "antd/es/typography/Paragraph";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
+import { ConfigProvider } from "antd";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
+import React from "react";
 import "../../public/antd.min.css";
-import { ConfigProvider } from "antd";
 import Container from "./Container";
+import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

@@ -1,31 +1,16 @@
 "use client";
 import {
   InstagramOutlined,
-  SpotifyOutlined,
   SendOutlined,
+  SpotifyOutlined,
 } from "@ant-design/icons";
-import React from "react";
-import {
-  Breadcrumb,
-  Layout,
-  Menu,
-  Button,
-  theme,
-  Typography,
-  Divider,
-  Space,
-  Flex,
-} from "antd";
-import { Header, Content, Footer } from "antd/es/layout/layout";
+import { Button, Divider, Flex, Layout, Menu, Space } from "antd";
+import { Content, Footer, Header } from "antd/es/layout/layout";
 import Paragraph from "antd/es/typography/Paragraph";
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
-import "../../public/antd.min.css";
-import { ConfigProvider } from "antd";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import "../../public/antd.min.css";
+import "./globals.css";
 
 const navItems = [
   {
@@ -37,7 +22,7 @@ const navItems = [
     label: "Our works",
   },
 ];
-const Container: any = ({ children }) => {
+const Container = ({ children }: React.PropsWithChildren) => {
   const router = useRouter();
   return (
     <Layout
